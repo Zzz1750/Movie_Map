@@ -1,0 +1,268 @@
+body {
+    zoom: 100%;
+    background-color: #222;
+    color: #fff;
+    font-weight: 400;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Khula", sans-serif;
+    height: 100vh;
+    box-sizing: border-box;
+    letter-spacing: 6px;
+    margin: 0;
+    line-height: 1.2;
+    overflow: hidden;
+}
+span {
+    display: inline-block;
+}
+.animate-me {
+    margin: 10px;
+}
+#intro_thing{
+  position: absolute;
+  top: 28%;
+}
+#heading_design{
+    color: orange;
+    font-family: "Righteous", sans-serif;
+    font-size: 100px;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+}
+.animate__animated.animate__customSlide {
+    animation: customSlideInLeft1 1s ease-in-out both;
+}
+@keyframes customSlideInLeft1 {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    70% {
+        transform: translateX(2%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+#screen_design1{
+    position: absolute;
+    background-color: orange;
+    height: 300px;
+    width: 300px;
+    right: 90%;
+    top: 80%;
+    border-radius: 500px;  
+}
+#screen_design2{
+    position: absolute;
+    background-color: orange;
+    height: 300px;
+    width: 300px;
+    left: 90%;
+    bottom:80%;
+    border-radius: 500px;  
+}
+#screen_design3{
+    position: absolute;
+    background-color: #222;
+    height: 200px;
+    width: 200px;
+    left: 98%;
+    bottom:100%;
+    border-radius: 500px; 
+}
+#screen_design4{
+    position: absolute;
+    background-color: #222;
+    height: 250px;
+    width: 250px;
+    right: 95%;
+    top: 100%;
+    border-radius: 500px;  
+}
+#search_label{
+    position: absolute;
+    top: 35%;
+    left: 46.5%;
+    transform: translateX(-50%);
+}
+#search_label2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 37.25%;
+    left:55.5%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: orange;
+}
+#movieTitle{
+    position: absolute;
+    top: 47.3%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 30px;
+    width: 500px;
+    font-size: 30px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    padding-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #222222ee;
+}
+#search_button{
+    position: absolute;
+    top: 56%;
+    left: 50%;
+}
+#main_page{
+    display: none;
+}
+#creator_logo{
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "East Sea Dokdo", sans-serif;
+    text-transform: none;
+    letter-spacing: 1px;
+    opacity: 0.5;
+    color: white;
+}
+@keyframes error_animation {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0.7);
+    }
+}
+#error_text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.4);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation-duration: 20s;
+    animation-fill-mode: forwards; 
+    animation-timing-function: ease-out;
+}
+#movie_poster, #movie_rated, #movie_released, #movie_runtime, #movie_genre, #movie_director, #movie_writer, #movie_actors, #movie_plot, #movie_language, #movie_country, #movie_awards {
+    display: none;
+    opacity: 0;
+    text-transform: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 5px;
+    transform: translateX(-50%,-50%);
+    position: absolute;
+    font-size: 16px;
+}   
+#movie_name{
+    position: absolute;
+    display: none;
+    opacity: 0;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s ease-out; 
+}
+
+#movie_poster{
+    top: 26%;
+    left: 5%;
+    width: 260px;
+}
+#movie_rated{
+    top: 25%;
+    left: 25%;
+}
+#movie_released{
+    top: 31.5%;
+    left: 25%;
+}
+#movie_runtime{
+    top: 38%;
+    left: 25%;           
+}
+#movie_genre{
+    top: 44.5%;
+    left: 25%;
+}
+#movie_director{
+    top: 27%;
+    left: 58%;
+}
+#movie_writer{
+    line-height: 22px;
+    text-align: start;
+    max-width: 600px;
+    top: 33.5%;
+    left: 58%;            
+}
+#movie_actors{
+    line-height: 22px;
+    text-align: start;
+    max-width: 600px;
+    top: 40%;
+    left: 58%;
+}
+#movie_plot{
+    line-height: 22px;
+    text-align: start;
+    max-width: 600px;
+    top: 48.5%;
+    left: 58%;
+}
+#movie_language{
+    line-height: 22px;
+    text-align: start;
+    max-width: 500px;
+    top: 51%;
+    left: 25%;
+}
+#movie_country{
+    top: 57.5%;
+    left: 25%;
+}
+#movie_awards{
+    line-height: 22px;
+    text-align: start;
+    max-width: 500px;
+    top: 64%;
+    left: 25%;
+}
+#back_home,#trailer,#search_button{
+    cursor: pointer;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border: 5px dotted orange;
+    padding: 10px 20px 10px 20px;
+    background-color: #222;
+    color: orange;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+#back_home{
+    opacity: 0;
+    left: 45%;
+    display: none;
+    top: 86.5%;
+}
+#trailer{
+    opacity: 0;
+    left: 55%;
+    display: none;
+    top: 86.5%;
+}

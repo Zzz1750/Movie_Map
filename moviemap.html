@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=East+Sea+Dokdo&family=Righteous&display=swap" rel="stylesheet">
+
+    <title>Movie Map</title>
+    <link rel="stylesheet" href="./css/moviemap.css">
+</head>
+<body>
+    <!-- Loading -->
+    <div id="intro_thing">
+        <div class="animate-me">
+            movie.map
+        </div>
+        <div class="animate-me">    
+            movie.map
+        </div>
+        <div class="animate-me">
+            movie.map
+        </div>
+        <div class="animate-me">
+            movie.map
+        </div>
+        <div class="animate-me">
+            movie.map
+        </div> 
+    </div>
+    
+    <!-- Main Page -->
+    <div id="main_page">
+        <div class="animate__animated animate__customSlide" id="heading_design">
+            <div id="screen_design1"></div>
+            <div id="screen_design2"></div>
+            <div id="screen_design3"></div>
+            <div id="screen_design4"></div>
+            Movie.Map
+        </div>
+    
+    
+        <p id="search_label">Search</p>
+        <p id="search_label2">Movie</p>
+        <input type="text" id="movieTitle" placeholder="">
+        <button id="search_button" onclick="submitted()">MAP IT</button>
+        <p id="error_text"></p>
+        <a href=" http://www.instagram.com/zharonn_" target="_blank"><p id="creator_logo">Zzz</p></a>
+    </div>
+
+
+
+    <div id="detail_page">
+        <h2 id="movie_name">Name</h2>
+        <img id="movie_poster" src="" alt="">
+        <p id="movie_rated">Rated: null</p>
+        <p id="movie_released">Released: null</p>
+        <p id="movie_runtime">Runtime: null</p>
+        <p id="movie_genre">Genre: null</p>
+        <p id="movie_director">Director: null</p>
+        <p id="movie_writer">Writer: null</p>
+        <p id="movie_actors">Actors: null</p>
+        <p id="movie_plot">PLot: null</p>
+        <p id="movie_language">Langauge: null</p>
+        <p id="movie_country">Country: null</p>
+        <p id="movie_awards">Awards: null</p>
+        <button id="back_home" onclick="window.location.reload();"><strong>< BACK</strong></button>
+        <button id="trailer" onclick="searchTeaser()"><strong>Watch Trailer</strong></button>
+    </div>
+ 
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/letterizejs@2.0.1/lib/letterize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="./js/controller.js"></script>
+</body>
+</html>
