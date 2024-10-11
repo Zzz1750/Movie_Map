@@ -91,7 +91,7 @@ span {
 
 #search_container {
     position: absolute;
-    top: 28%;
+    top: 30%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -113,7 +113,7 @@ span {
 
 #movieTitle {
     position: absolute;
-    top: 45%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 30px;
