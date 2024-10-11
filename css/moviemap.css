@@ -30,7 +30,7 @@ span {
 #heading_design{
     color: orange;
     font-family: "Righteous", sans-serif;
-    font-size: 7vw; /* Adjusted for responsiveness */
+    font-size: 7vw;
     position: absolute;
     top: 3%;
     left: 3%;
@@ -91,7 +91,7 @@ span {
 
 #search_container {
     position: absolute;
-    top: 27%; /* Moved higher to be above the input field */
+    top: 28%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -113,7 +113,7 @@ span {
 
 #movieTitle {
     position: absolute;
-    top: 40%; /* Positioned below the search labels */
+    top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 30px;
@@ -126,7 +126,6 @@ span {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #222222ee;
 }
-
 
 #search_button {
     position: absolute;
@@ -161,7 +160,7 @@ span {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.25vw; /* Responsive font size */
+    font-size: 1.25vw;
     color: rgba(255, 255, 255, 0.4);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     animation-duration: 20s;
@@ -176,7 +175,7 @@ span {
     letter-spacing: 5px;
     transform: translateX(-50%,-50%);
     position: absolute;
-    font-size: 1vw; /* Responsive font size */
+    font-size: 1vw;
 }
 #movie_name {
     position: absolute;
@@ -190,7 +189,7 @@ span {
 #movie_poster {
     top: 26%;
     left: 5%;
-    width: 13vw; /* Responsive width */
+    width: 13vw;
 }
 #movie_rated {
     top: 25%;
@@ -261,7 +260,7 @@ span {
     color: orange;
     border-radius: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1vw; /* Responsive font size */
+    font-size: 1vw;
 }
 #back_home {
     opacity: 0;
@@ -276,15 +275,14 @@ span {
     top: 86.5%;
 }
 
-/* Media Queries for smaller screens */
 @media (max-width: 768px) {
     body {
-        font-size: 3.5vw; /* Larger font size for smaller screens */
+        font-size: 3.5vw;
     }
     #heading_design {
         font-size: 12vw;
     }
     #movieTitle {
-        width: 70vw; /* Adjust input width */
+        width: 70vw;
     }
 }
