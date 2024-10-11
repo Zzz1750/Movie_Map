@@ -91,7 +91,7 @@ span {
 
 #search_container {
     position: absolute;
-    top: 34%;
+    top: 27%; /* Moved higher to be above the input field */
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -113,7 +113,7 @@ span {
 
 #movieTitle {
     position: absolute;
-    top: 42%;
+    top: 40%; /* Positioned below the search labels */
     left: 50%;
     transform: translate(-50%, -50%);
     height: 30px;
@@ -126,6 +126,7 @@ span {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #222222ee;
 }
+
 
 #search_button {
     position: absolute;
