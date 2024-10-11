@@ -247,10 +247,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-
-
-
 //input_control
 document.addEventListener('DOMContentLoaded', function () {
     const placeholder = document.getElementById('movieTitle');
@@ -261,33 +257,33 @@ document.addEventListener('DOMContentLoaded', function () {
     textIndex=randomiser(textIndex);
 
 
-    //random suggestions
-    function typeEffect() {
-        randomIndex = Math.floor(Math.random() * texts.length);
-        const currentText = texts[textIndex];
-        placeholder.placeholder = deleting? currentText.substring(0, charIndex--): currentText.substring(0, charIndex++);
+//random suggestions
+function typeEffect() {
+    randomIndex = Math.floor(Math.random() * texts.length);
+    const currentText = texts[textIndex];
+    placeholder.placeholder = deleting? currentText.substring(0, charIndex--): currentText.substring(0, charIndex++);
 
-        if (!deleting && charIndex === currentText.length) {
-            deleting = true;
-            setTimeout(typeEffect, 1000);
-        } else if (deleting && charIndex === 0) {
-            deleting = false;
-            textIndex = randomiser(textIndex);
-            setTimeout(typeEffect, 500); 
-        } else {
-            setTimeout(typeEffect, 150);
-        }
+    if (!deleting && charIndex === currentText.length) {
+        deleting = true;
+        setTimeout(typeEffect, 1000);
+    } else if (deleting && charIndex === 0) {
+        deleting = false;
+        textIndex = randomiser(textIndex);
+        setTimeout(typeEffect, 500); 
+    } else {
+        setTimeout(typeEffect, 150);
     }
+}
 
-    function randomiser(textIndex){
-        new_random = Math.floor(Math.random() * texts.length);
-        if(new_random == textIndex){
-            return randomiser(textIndex);
-        }
-        else{
-            return new_random;
-        }
+function randomiser(textIndex){
+    new_random = Math.floor(Math.random() * texts.length);
+    if(new_random == textIndex){
+        return randomiser(textIndex);
     }
+    else{
+        return new_random;
+    }
+}
 
     setTimeout(typeEffect,5500);
 });
