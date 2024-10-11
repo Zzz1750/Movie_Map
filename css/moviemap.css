@@ -30,7 +30,7 @@ span {
 #heading_design{
     color: orange;
     font-family: "Righteous", sans-serif;
-    font-size: 7vw;
+    font-size: 7vw; /* Adjusted for responsiveness */
     position: absolute;
     top: 3%;
     left: 3%;
@@ -160,7 +160,7 @@ span {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.25vw;
+    font-size: 1.25vw; /* Responsive font size */
     color: rgba(255, 255, 255, 0.4);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     animation-duration: 20s;
@@ -175,7 +175,7 @@ span {
     letter-spacing: 5px;
     transform: translateX(-50%,-50%);
     position: absolute;
-    font-size: 1vw;
+    font-size: 1vw; /* Responsive font size */
 }
 #movie_name {
     position: absolute;
@@ -189,7 +189,7 @@ span {
 #movie_poster {
     top: 26%;
     left: 5%;
-    width: 13vw;
+    width: 13vw; /* Responsive width */
 }
 #movie_rated {
     top: 25%;
@@ -260,7 +260,7 @@ span {
     color: orange;
     border-radius: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1vw;
+    font-size: 1vw; /* Responsive font size */
 }
 #back_home {
     opacity: 0;
@@ -275,14 +275,15 @@ span {
     top: 86.5%;
 }
 
+/* Media Queries for smaller screens */
 @media (max-width: 768px) {
     body {
-        font-size: 3.5vw;
+        font-size: 3.5vw; /* Larger font size for smaller screens */
     }
     #heading_design {
         font-size: 12vw;
     }
     #movieTitle {
-        width: 70vw;
+        width: 70vw; /* Adjust input width */
     }
 }
